@@ -10,5 +10,5 @@ Technologies used
     - Backend: MongoDB
     - Front-end: React
     - Deployment AWS
-        - EC2: Server deployment
-        - AWS Lambda: to remove no longer valid URLS (rooms which already exists)
+        - EC2
+        - AWS Lambda
