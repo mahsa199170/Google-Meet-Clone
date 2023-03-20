@@ -1,0 +1,53 @@
+.luna{
+    width: 10rem;
+    height:2rem;
+    margin-left: 5rem;
+    /* width: 50%; */
+    border-radius: 50%;
+ 
+
+}
+
+div.luna{
+    width: 50%;
+    height: 50%;
+    /* overflow: hidden; */
+}
+
+article{
+    margin-right: 2.5rem;
+    width: 73%;
+    text-align: justify;
+  
+}
+
+.middle-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* gap: 5rem; */
+    /* margin-left: 0; */
+    margin-top: 5rem;
+
+}
+
+
+.bottom-part{
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* gap: 5rem; */
+    /* margin-left: 0; */
+    margin-top: 5rem;
+
+}
+
+
+input[type='text'] {
+    width: 200px;
+    margin-right: 10px;
+  }
+  
+  button {
+    margin-right: 10px;
+  }
+  

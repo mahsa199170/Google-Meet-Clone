@@ -1,0 +1,130 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    text-decoration: none; 
+    list-style: none;  /*Removes any list-style (such as bullets or numbers) from the element. */
+}
+
+
+/* create css variable */
+
+:root {
+    --color-bg: #93BFCF  ;
+    --color-bg-variant: #6096B4  ;
+    --color-primary: #EEE9DA;
+    --color-primary-variant: #  ;
+    --color-white: black  ;
+    --color-light: #  ;
+
+    --container-width-lg: 75%;
+    --container-width-md: 86%;
+    --container-width-sm: 90%;
+
+    --transition: all 400ms ease;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body{
+    background: var(--color-bg);
+    color: var(--color-white);
+    line-height: 1.7;
+
+}
+
+
+/* --------------------------------------general style---------------------------------- */
+
+.container {
+    width: var(--container-width-lg);
+    margin: 0 auto;  /*  to position it in the middle horizontally*/
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: 500;
+
+}
+
+h1{
+    font-size: 2.5rem;
+}
+
+ section{
+    /* margin-top: 8rem;    so that we have whitespace around every component which has section */
+    text-align: center;
+} 
+
+
+.text-light{
+    color: var(--color-light);
+}
+
+a{
+    color: var(--color-primary);
+    transition: var(--transition);
+}
+
+a:hover{
+    color: var(--color-white);
+}
+
+.btn {
+    width: max-content;
+    background-color: #EEE9DA;
+    display: inline-block;
+    color: var(--color-bg-variant);
+    padding: 0.75rem 1.2rem;
+    border-radius: 0.4rem;
+    border: 1px solid var(--color-primary);
+    transition: var(--transition);
+}
+
+.btn:hover{
+    background: var(--color-primry);
+    color: var(--color-white);
+    border-color: transparent;
+}
+
+img{
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+
+/* -----------------------for tablet size/ medium devices---------------------------------- */
+
+@media screen and (max-width: 1024px) {
+
+    .container{
+        width: var(--container-width-md);
+    }
+    
+    /* section {
+
+    } */
+    
+    }
+
+
+/* -----------------------for mobile size/ small devices---------------------------------- */
+
+@media screen and (max-width: 600px) {
+    .container{
+        width: var(--container-width-sm);
+    }
+  
+}

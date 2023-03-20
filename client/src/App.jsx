@@ -1,26 +1,31 @@
-import React, {useEffect, useState} from "react";
+// import React, {useEffect, useState} from "react";
+import Home from "./components/home/Home";
+import Room from "./components/room/Room";
+import NoMatch from "./components/NoMatch/NoMatch";
+import {  BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+// import NotFound from './pages/NotFound';
+
+
 
 const App = () => {
-  const [backendData, setBackendData] = useState([{}])
-
-  useEffect(()=>{
-    fetch("/api").then(
-      response => response.json()
-    ).then(
-      data => {
-        setBackendData(data)
-      }
-    )
-  }, [])
+  
   return (
+    
     <div>
-
-      {(typeof backendData.users === "undefined") ? (<p>Loading.....</p>) : (backendData.users.map((user,i)=>(
-        <p key ={i}>{user}</p>
-      )))
-      }
       
-    </div>
+      
+        <Router>
+          
+          <Routes>
+            <Route exact path="/" element= {<Home/>}/>
+            <Route exact path="/:id" element={<Room />} />
+            <Route exact path="*" element={<NoMatch/>} />    
+          </Routes>
+        
+        </Router>
+      
+      </div>
+  
     
   );
 }

@@ -1,0 +1,16 @@
+.logo{
+    width:8rem;
+    margin-top: 0;
+    display: inline-block;
+}
+
+
+.header__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* gap: 50rem; */
+    margin-left: 0;
+}
+
+
+
